@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ESP32 Future — a playful place to explore the tiny board behind big ideas." />
+  <title>ESP32 Future | Learn. Build. Play.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header>
+    <a class="brand" href="#home"><span class="brand-mark">∞</span> ESP32 <b>FUTURE</b></a>
+    <nav><a href="#explore">Explore</a><a href="#missions">Missions</a><a href="#play">Play Lab</a></nav>
+    <a class="nav-cta" href="#play">Start playing <span>↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> THE TINY BOARD. THE HUGE FUTURE.</p>
+        <h1>Make the <em>ordinary</em><br />feel electric.</h1>
+        <p class="hero-text">ESP32 is a pocket-sized brain with Wi-Fi, Bluetooth and enough curiosity to turn your wildest “what if?” into a real thing.</p>
+        <div class="hero-actions"><a class="button primary" href="#explore">Explore the board <span>↓</span></a><a class="button ghost" href="#play">Enter Play Lab <span>→</span></a></div>
+        <div class="hero-meta"><div><strong>2.4 GHz</strong><span>Wi-Fi + Bluetooth</span></div><div><strong>34</strong><span>GPIO possibilities</span></div><div><strong>∞</strong><span>Ideas to build</span></div></div>
+      </div>
+      <div class="board-wrap" aria-label="Stylised ESP32 development board illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✦</div><div class="spark spark-c">+</div>
+        <div class="board"><div class="board-top"></div><div class="antenna"><i></i><i></i><i></i><i></i><i></i></div><div class="chip"><span>ESP32</span><small>WiFi · BT</small></div><div class="led"></div><div class="button-mini">BOOT</div><div class="pins pins-left"></div><div class="pins pins-right"></div><div class="board-label">ESPRESSIF<br /><b>ESP32</b></div></div>
+        <div class="float-card card-wifi"><span class="status-dot"></span><div><b>CONNECTED</b><small>Wi-Fi ready</small></div></div>
+        <div class="float-card card-idea"><span>⚡</span><div><b>IDEA DETECTED</b><small>Let’s make it real</small></div></div>
+      </div>
+    </section>
+
+    <section class="ticker"><div>LEARN BY BUILDING <span>✦</span> PLAY WITH PURPOSE <span>✦</span> DREAM IN CIRCUITS <span>✦</span> LEARN BY BUILDING <span>✦</span> PLAY WITH PURPOSE <span>✦</span></div></section>
+
+    <section class="explore section" id="explore">
+      <div class="section-heading"><div><p class="eyebrow"><span></span> INSIDE THE MAGIC</p><h2>A small board with<br /><em>main-character</em> energy.</h2></div><p>Tap a feature and see why makers keep an ESP32 at the heart of their next big experiment.</p></div>
+      <div class="feature-grid">
+        <button class="feature-card active" data-title="Wi-Fi built in" data-copy="Connect your project to the internet without extra hardware. Build weather stations, web controls, and smart home ideas right out of the box." data-icon="◌"><span class="feature-num">01</span><span class="feature-icon">⌁</span><h3>Wi-Fi wizardry</h3><p>Your projects can talk to the whole world.</p><span class="corner">↗</span></button>
+        <button class="feature-card" data-title="Bluetooth energy" data-copy="Send data to phones, speakers and other devices using Bluetooth Classic or low-energy BLE. Wireless magic, minus the spaghetti wires." data-icon="⌁"><span class="feature-num">02</span><span class="feature-icon">◒</span><h3>Bluetooth vibes</h3><p>Let your creations make new friends.</p><span class="corner">↗</span></button>
+        <button class="feature-card" data-title="GPIO playground" data-copy="GPIO pins are your board’s hands and senses. Read buttons and sensors, light LEDs, turn motors—make the physical world respond." data-icon="✣"><span class="feature-num">03</span><span class="feature-icon">✣</span><h3>Pin power</h3><p>Feel, see, hear, control. Your call.</p><span class="corner">↗</span></button>
+      </div>
+      <div class="feature-detail"><span id="detailIcon">◌</span><div><small>FEATURE UNLOCKED</small><h3 id="detailTitle">Wi-Fi built in</h3><p id="detailCopy">Connect your project to the internet without extra hardware. Build weather stations, web controls, and smart home ideas right out of the box.</p></div><span class="detail-arrow">→</span></div>
+    </section>
+
+    <section class="missions section" id="missions">
+      <div class="section-heading"><div><p class="eyebrow"><span></span> BUILD A LITTLE CHAOS</p><h2>Pick a mission.<br /><em>Make it blink.</em></h2></div><p>Every great invention starts with a tiny experiment. Choose a vibe and run a virtual first test.</p></div>
+      <div class="mission-layout"><div class="mission-list"><button class="mission active" data-mission="plant"><span>01</span><div><b>Plant parent 2.0</b><small>Soil sensor + alert light</small></div><i>→</i></button><button class="mission" data-mission="mood"><span>02</span><div><b>Mood-light machine</b><small>Touch sensor + RGB LED</small></div><i>→</i></button><button class="mission" data-mission="door"><span>03</span><div><b>Secret knock door</b><small>Button + servo motor</small></div><i>→</i></button></div>
+        <div class="simulator"><div class="sim-top"><span class="live"><i></i> LIVE MISSION</span><span id="missionName">PLANT PARENT 2.0</span></div><div class="sim-stage" id="simStage"><div class="plant"><span class="leaf l1"></span><span class="leaf l2"></span><span class="leaf l3"></span><i></i></div><div class="pot"></div><div class="sensor-line"></div><div class="sim-chip">ESP32</div><div class="signal signal-1"></div><div class="signal signal-2"></div></div><div class="sim-bottom"><div><small id="readingLabel">SOIL MOISTURE</small><strong id="reading">82%</strong></div><button id="runMission">Run test <span>▶</span></button></div></div>
+      </div>
+    </section>
+
+    <section class="play section" id="play">
+      <div class="play-header"><div><p class="eyebrow"><span></span> PLAY LAB</p><h2>Your reflexes,<br /><em>but make them GPIO.</em></h2></div><p>When the button lights up, hit it before the signal disappears. Every hit earns a byte of maker knowledge.</p></div>
+      <div class="game-box"><div class="game-info"><div><span>HIGH SCORE</span><b id="highScore">0</b></div><div><span>YOUR SCORE</span><b id="score">0</b></div><div><span>TIME LEFT</span><b id="time">20</b>s</div></div><div class="game-arena" id="arena"><div class="game-message" id="gameMessage"><span>READY?</span><strong>Press start, then catch<br />the glowing GPIO.</strong><button id="startGame">Start the signal <span>→</span></button></div><button class="gpio-button" id="gpioButton" aria-label="Catch the glowing GPIO">⚡</button><div class="grid-lines"></div></div><div class="game-footer"><span id="fact">GPIO pins let the ESP32 read inputs and control outputs.</span><span class="game-tag">LEARN + PLAY</span></div></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">∞</span> ESP32 <b>FUTURE</b></a><p>Designed & built with curious energy by <strong>Sanskar D. Patil</strong></p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
