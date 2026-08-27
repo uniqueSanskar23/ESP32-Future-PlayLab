@@ -162,7 +162,7 @@ esp32-future-playlab/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/esp32-future-playlab.git
+git clone https://github.com/uniqueSanskar23/ESP32-Future-PlayLab.git
 ```
 
 ### 2. Enter the project directory
