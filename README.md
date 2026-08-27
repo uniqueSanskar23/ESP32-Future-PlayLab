@@ -126,10 +126,10 @@ The current version is a browser-based web application built with:
 
 ```text
 ESP32-Future-PlayLab/
-│
 ├── index.html
 ├── style.css
 ├── script.js
+├── LICENSE
 └── README.md
 ```
 
