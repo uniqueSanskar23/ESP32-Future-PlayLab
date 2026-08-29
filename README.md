@@ -156,6 +156,18 @@ Open `index.html` in a browser.
 For development, you can use **VS Code Live Server** or another local development server.
 
 ---
+## 📸 Project Preview
+
+### 🏠 Home
+![ESP32 Future PlayLab Home](home.png.jpg)
+
+### 🧪 Missions
+![ESP32 Future PlayLab Missions](missions.png.jpg)
+
+### 🎮 GPIO Reflex Challenge
+![GPIO Reflex Challenge](gpio-game.png.jpg)
+
+---
 
 ## 🎯 Future Development
 
